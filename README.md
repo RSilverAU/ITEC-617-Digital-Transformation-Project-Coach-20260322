@@ -98,7 +98,7 @@ Designate one team member as the **Simulation Lead** who runs Claude sessions on
 
 To hand off to a new Lead: copy the entire Project Coach folder to the new Lead's computer and have them open Cowork (or VS Code) and select that folder. The workspace files carry all prior session context.
 
-**Note for Path C users**: Keep the working folder local (not synced to OneDrive/iCloud). Only copy finished outputs to the shared folder.
+**IMPORTANT NOTE for Path C users**: Keep the working folder local (not synced to OneDrive/iCloud). Only copy finished outputs to the shared folder.
 
 ### Option 2: GitHub Desktop Sync (For teams who want version history)
 
