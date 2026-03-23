@@ -6,11 +6,11 @@ This guide walks you through setting up and using the Enterprise IT Navigator Si
 
 You need the following before you begin:
 
-| Prerequisite | How to Check | Install Link |
-|-------------|-------------|-------------|
-| **Git** | Open a terminal and type `git --version` | [git-scm.com/downloads](https://git-scm.com/downloads) |
-| **VS Code** (recommended) | Open VS Code — if it launches, you're set | [code.visualstudio.com](https://code.visualstudio.com/) |
-| **Claude Pro** | Sign in at [claude.ai](https://claude.ai/) and check your plan | [$20/month subscription](https://claude.ai/) |
+| Prerequisite              | How to Check                                                   | Install Link                                            |
+| ------------------------- | -------------------------------------------------------------- | ------------------------------------------------------- |
+| **Git**                   | Open a terminal and type `git --version`                       | [git-scm.com/downloads](https://git-scm.com/downloads)  |
+| **VS Code** (recommended) | Open VS Code — if it launches, you're set                      | [code.visualstudio.com](https://code.visualstudio.com/) |
+| **Claude Pro**            | Sign in at [claude.ai](https://claude.ai/) and check your plan | [$20/month subscription](https://claude.ai/)            |
 
 > **Opening a terminal**: On Mac, press `Cmd+Space` and type "Terminal". On Windows, press the Windows key and type "Command Prompt" or "PowerShell".
 
@@ -53,12 +53,13 @@ claude
 
 Each team creates their own private copy using GitHub's template feature.
 
-1. Go to [github.com/leifulstrup/ITEC-617-Digital-Transformation-Project-Coach](https://github.com/leifulstrup/ITEC-617-Digital-Transformation-Project-Coach).
-2. Click the green **"Use this template"** button near the top right.
-3. Select **"Create a new repository"**.
-4. Name your repo (e.g., `Team-Name-DT-Project`).
-5. Set visibility to **Private** (recommended).
-6. Click **"Create repository"**.
+1. Go to [github.com/RSilverAU/ITEC-617-Digital-Transformation-Project-Coach-20260322](https://github.com/RSilverAU/ITEC-617-Digital-Transformation-Project-Coach-20260322).
+2. 
+3. Click the green **"Use this template"** button near the top right.
+4. Select **"Create a new repository"**.
+5. Name your repo (e.g., `Team-Name-DT-Project`).
+6. Set visibility to **Private** (recommended).
+7. Click **"Create repository"**.
 
 Then clone **your new repo**:
 
@@ -127,17 +128,17 @@ Claude will read your project brief and provide an assessment of strengths, gaps
 
 Use slash commands to activate persona consultations. Each executive will introduce themselves, read your project brief, and begin a challenging conversation from their perspective.
 
-| Command | Executive | Focus Areas |
-|---------|-----------|-------------|
-| `/cio` | Jordan Chen, CIO | IT strategy, governance, enterprise architecture |
-| `/ciso` | Anika Patel, CISO | Cybersecurity, risk, privacy, compliance |
-| `/cfo` | Robert Okafor, CFO | Financial analysis, ROI, TCO, budget impact |
-| `/coo` | Maria Santos, COO | Operations, implementation, pilot design |
-| `/chro` | David Washington, CHRO | Change management, people, culture |
-| `/cto` | Priya Ramanathan, CTO | Technology, innovation, architecture |
-| `/cdo` | Sarah Kim, CDO | Data strategy, governance, AI ethics |
-| `/legal` | Jonathan Shapiro, General Counsel | Legal, regulatory, IP, compliance |
-| `/procurement` | Lisa Fernandez, VP Procurement | Vendor strategy, contracts, negotiation |
+| Command        | Executive                         | Focus Areas                                      |
+| -------------- | --------------------------------- | ------------------------------------------------ |
+| `/cio`         | Jordan Chen, CIO                  | IT strategy, governance, enterprise architecture |
+| `/ciso`        | Anika Patel, CISO                 | Cybersecurity, risk, privacy, compliance         |
+| `/cfo`         | Robert Okafor, CFO                | Financial analysis, ROI, TCO, budget impact      |
+| `/coo`         | Maria Santos, COO                 | Operations, implementation, pilot design         |
+| `/chro`        | David Washington, CHRO            | Change management, people, culture               |
+| `/cto`         | Priya Ramanathan, CTO             | Technology, innovation, architecture             |
+| `/cdo`         | Sarah Kim, CDO                    | Data strategy, governance, AI ethics             |
+| `/legal`       | Jonathan Shapiro, General Counsel | Legal, regulatory, IP, compliance                |
+| `/procurement` | Lisa Fernandez, VP Procurement    | Vendor strategy, contracts, negotiation          |
 
 **Recommended consultation order:**
 
@@ -174,17 +175,25 @@ Once you have draft PowerPoint slides, the simulation can analyze your **actual 
 > **Claude Code can read `.pptx` and `.pdf` files directly.** You can simply place your slides in `student-workspace/slides/` and ask Claude to review them — no extraction step needed. The extraction script produces a structured markdown file that gives more consistent slide-by-slide feedback, but it is optional.
 
 1. **Keep your original PowerPoint safe.** Always keep your master `.pptx` file in a separate folder outside this repository (e.g., your Desktop or OneDrive). AI tools can sometimes modify files in your workspace inadvertently.
+
 2. Place a **copy** of your `.pptx` file in `student-workspace/slides/`
+
 3. **Save a snapshot of your work** so you can always recover a previous version:
+   
    ```
    git add -A && git commit -m "Snapshot before AI feedback session"
    ```
+   
    > **What does this do?** `git add -A` stages all your current files, and `git commit` saves a snapshot. If anything goes wrong, you can always get back to this point.
+
 4. Run the extraction command:
+   
    ```
    uv run extract_presentation.py
    ```
+
 5. This extracts all slide text, speaker notes, tables, and structure into `student-workspace/extracted/presentation-content.md`
+
 6. **For visual feedback** on charts, diagrams, and layout: also export your presentation as PDF from PowerPoint (File > Export > Create PDF) and save it in `student-workspace/slides/`. Claude Code can read PDFs directly and analyze your slide visuals.
 
 Now when you use persona skills or `/evaluate`, you get **slide-by-slide feedback** — which slides are strong, which need work, and what's missing.
@@ -196,11 +205,15 @@ Now when you use persona skills or `/evaluate`, you get **slide-by-slide feedbac
 You only need Python and `uv` if you want to run the extraction script. Since Claude Code can read `.pptx` files directly, this is optional.
 
 1. **Install Python 3.12+** from [python.org/downloads](https://www.python.org/downloads/). On Windows, check the box that says **"Add Python to PATH"** during installation.
+
 2. **Install uv** (a fast Python package manager):
+   
    - **Mac/Linux**: `curl -LsSf https://astral.sh/uv/install.sh | sh`
    - **Windows** (PowerShell): `powershell -ExecutionPolicy ByPass -c "irm https://astral.sh/uv/install.ps1 | iex"`
    - Full instructions: [docs.astral.sh/uv/getting-started/installation](https://docs.astral.sh/uv/getting-started/installation/)
+
 3. **Restart your terminal** after installing, then verify:
+   
    ```
    python3 --version
    uv --version
@@ -240,15 +253,15 @@ This catches broken references after file moves or renames.
 
 ## Troubleshooting
 
-| Problem | Solution |
-|---------|----------|
-| `git: command not found` | Install Git from [git-scm.com/downloads](https://git-scm.com/downloads), then **restart your terminal** |
-| `git clone` fails with "permission denied" | Make sure you're using the HTTPS URL (starts with `https://`), not SSH |
+| Problem                                              | Solution                                                                                                                                                                                       |
+| ---------------------------------------------------- | ---------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------- |
+| `git: command not found`                             | Install Git from [git-scm.com/downloads](https://git-scm.com/downloads), then **restart your terminal**                                                                                        |
+| `git clone` fails with "permission denied"           | Make sure you're using the HTTPS URL (starts with `https://`), not SSH                                                                                                                         |
 | Claude Code doesn't recognize `/cio` or other skills | Make sure you opened the **cloned project folder** in VS Code (File > Open Folder) or navigated to it in the CLI with `cd`. Claude Code reads skills from `.claude/skills/` inside the project |
-| Claude Code says "I can't find that file" | Make sure you're in the project directory. In the CLI, run `pwd` to check your current directory |
-| Claude Code VS Code extension not appearing | Make sure you installed the "Claude Code" extension (not "Claude" or another variant). Restart VS Code after installation |
-| `uv: command not found` | Install uv from [docs.astral.sh/uv](https://docs.astral.sh/uv/getting-started/installation/), then **restart your terminal** |
-| `python: command not found` | Install Python from [python.org/downloads](https://www.python.org/downloads/). On Mac, try `python3` instead of `python` |
-| `extract_presentation.py` fails | Run it as `uv run extract_presentation.py` (not `python extract_presentation.py`). Or skip extraction — Claude Code can read `.pptx` files directly |
+| Claude Code says "I can't find that file"            | Make sure you're in the project directory. In the CLI, run `pwd` to check your current directory                                                                                               |
+| Claude Code VS Code extension not appearing          | Make sure you installed the "Claude Code" extension (not "Claude" or another variant). Restart VS Code after installation                                                                      |
+| `uv: command not found`                              | Install uv from [docs.astral.sh/uv](https://docs.astral.sh/uv/getting-started/installation/), then **restart your terminal**                                                                   |
+| `python: command not found`                          | Install Python from [python.org/downloads](https://www.python.org/downloads/). On Mac, try `python3` instead of `python`                                                                       |
+| `extract_presentation.py` fails                      | Run it as `uv run extract_presentation.py` (not `python extract_presentation.py`). Or skip extraction — Claude Code can read `.pptx` files directly                                            |
 
 Still stuck? Ask your instructor or TA for help.
