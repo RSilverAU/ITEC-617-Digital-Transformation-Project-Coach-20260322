@@ -1,16 +1,16 @@
 # Quick Start: VS Code + GitHub Copilot
 
-This guide walks you through setting up and using the Enterprise IT Navigator Simulation with VS Code and GitHub Copilot. This is the recommended path for students who have access to GitHub Education.
+This guide walks you through setting up and using the Enterprise IT Navigator Simulation with VS Code and GitHub Copilot. This is an efficient path for students who have access to GitHub Education, because it comes with free Copilot credits.
 
 ## Prerequisites
 
 You need all three of the following before you begin:
 
-| Prerequisite | How to Check | Install Link |
-|-------------|-------------|-------------|
-| **Git** | Open a terminal and type `git --version` | [git-scm.com/downloads](https://git-scm.com/downloads) |
-| **VS Code** | Open VS Code — if it launches, you're set | [code.visualstudio.com](https://code.visualstudio.com/) |
-| **GitHub Education** | Go to [github.com/settings/copilot](https://github.com/settings/copilot) and check your plan | [education.github.com](https://education.github.com/) |
+| Prerequisite         | How to Check                                                                                 | Install Link                                            |
+| -------------------- | -------------------------------------------------------------------------------------------- | ------------------------------------------------------- |
+| **Git**              | Open a terminal and type `git --version`                                                     | [git-scm.com/downloads](https://git-scm.com/downloads)  |
+| **VS Code**          | Open VS Code — if it launches, you're set                                                    | [code.visualstudio.com](https://code.visualstudio.com/) |
+| **GitHub Education** | Go to [github.com/settings/copilot](https://github.com/settings/copilot) and check your plan | [education.github.com](https://education.github.com/)   |
 
 > **Opening a terminal**: On Mac, press `Cmd+Space` and type "Terminal". On Windows, press the Windows key and type "Command Prompt" or "PowerShell".
 
@@ -37,7 +37,7 @@ GitHub Education gives you free access to GitHub Pro and GitHub Copilot Pro, whi
 
 Each team creates their own private copy using GitHub's template feature.
 
-1. Go to [github.com/leifulstrup/ITEC-617-Digital-Transformation-Project-Coach](https://github.com/leifulstrup/ITEC-617-Digital-Transformation-Project-Coach).
+1. Go to [github.com?RSilverAU/ITEC-617-Digital-Transformation-Project-Coach-20260322](https://github.com/RSilverAU/ITEC-617-Digital-Transformation-Project-Coach-20260322).
 2. Click the green **"Use this template"** button near the top right.
 3. Select **"Create a new repository"**.
 4. Name your repo (e.g., `Team-Name-DT-Project`).
@@ -112,17 +112,17 @@ If you prefer to fill in the brief yourself:
 
 In Copilot Chat, type `@` followed by the persona name to start a consultation. Each executive will introduce themselves, read your project brief, and begin asking challenging questions.
 
-| Command | Executive | Focus Areas |
-|---------|-----------|-------------|
-| `@cio` | Jordan Chen, CIO | IT strategy, governance, enterprise architecture |
-| `@ciso` | Anika Patel, CISO | Cybersecurity, risk, privacy, compliance |
-| `@cfo` | Robert Okafor, CFO | Financial analysis, ROI, TCO, budget impact |
-| `@coo` | Maria Santos, COO | Operations, implementation, pilot design |
-| `@chro` | David Washington, CHRO | Change management, people, culture |
-| `@cto` | Priya Ramanathan, CTO | Technology, innovation, architecture |
-| `@cdo` | Sarah Kim, CDO | Data strategy, governance, AI ethics |
-| `@legal` | Jonathan Shapiro, General Counsel | Legal, regulatory, IP, compliance |
-| `@procurement` | Lisa Fernandez, VP Procurement | Vendor strategy, contracts, negotiation |
+| Command        | Executive                         | Focus Areas                                      |
+| -------------- | --------------------------------- | ------------------------------------------------ |
+| `@cio`         | Jordan Chen, CIO                  | IT strategy, governance, enterprise architecture |
+| `@ciso`        | Anika Patel, CISO                 | Cybersecurity, risk, privacy, compliance         |
+| `@cfo`         | Robert Okafor, CFO                | Financial analysis, ROI, TCO, budget impact      |
+| `@coo`         | Maria Santos, COO                 | Operations, implementation, pilot design         |
+| `@chro`        | David Washington, CHRO            | Change management, people, culture               |
+| `@cto`         | Priya Ramanathan, CTO             | Technology, innovation, architecture             |
+| `@cdo`         | Sarah Kim, CDO                    | Data strategy, governance, AI ethics             |
+| `@legal`       | Jonathan Shapiro, General Counsel | Legal, regulatory, IP, compliance                |
+| `@procurement` | Lisa Fernandez, VP Procurement    | Vendor strategy, contracts, negotiation          |
 
 **Recommended consultation order:**
 
@@ -160,17 +160,25 @@ Once you have draft PowerPoint slides, the simulation can provide feedback on yo
 > **This step is optional.** Copilot can still evaluate your project based on your brief, primer content, and rubrics without extracting slides. Extraction gives more targeted slide-by-slide feedback.
 
 1. **Keep your original PowerPoint safe.** Always keep your master `.pptx` file in a separate folder outside this repository (e.g., your Desktop or OneDrive). AI tools can sometimes modify files in your workspace inadvertently.
+
 2. Place a **copy** of your `.pptx` file in `student-workspace/slides/`
+
 3. **Save a snapshot of your work** so you can always recover a previous version. In the VS Code terminal (Terminal > New Terminal), run:
+   
    ```
    git add -A && git commit -m "Snapshot before AI feedback session"
    ```
+   
    > **What does this do?** `git add -A` stages all your current files, and `git commit` saves a snapshot. If anything goes wrong, you can always get back to this point.
+
 4. Run the extraction command:
+   
    ```
    uv run extract_presentation.py
    ```
+
 5. This extracts all slide text, speaker notes, tables, and structure into `student-workspace/extracted/presentation-content.md`
+
 6. **For visual feedback** on charts, diagrams, and layout: also export your presentation as PDF from PowerPoint (File > Export > Create PDF) and save it in `student-workspace/slides/`
 
 Now when you consult personas or run evaluation, they will provide **slide-by-slide feedback** — identifying which slides are strong, which need work, and what content is missing.
@@ -182,11 +190,15 @@ Now when you consult personas or run evaluation, they will provide **slide-by-sl
 You only need Python and `uv` if you want to run the presentation extraction script. If you don't plan to extract slides, skip this.
 
 1. **Install Python 3.12+** from [python.org/downloads](https://www.python.org/downloads/). On Windows, check the box that says **"Add Python to PATH"** during installation.
+
 2. **Install uv** (a fast Python package manager):
+   
    - **Mac/Linux**: `curl -LsSf https://astral.sh/uv/install.sh | sh`
    - **Windows** (PowerShell): `powershell -ExecutionPolicy ByPass -c "irm https://astral.sh/uv/install.ps1 | iex"`
    - Full instructions: [docs.astral.sh/uv/getting-started/installation](https://docs.astral.sh/uv/getting-started/installation/)
+
 3. **Restart your terminal** after installing, then verify:
+   
    ```
    python3 --version
    uv --version
@@ -236,15 +248,15 @@ uv run scripts/validate_markdown_links.py --root .
 
 ## Troubleshooting
 
-| Problem | Solution |
-|---------|----------|
-| `git: command not found` | Install Git from [git-scm.com/downloads](https://git-scm.com/downloads), then **restart your terminal** |
-| `git clone` fails with "permission denied" | Make sure you're using the HTTPS URL (starts with `https://`), not SSH |
-| Copilot doesn't show persona agents (`@cio`, etc.) | Make sure you opened the **cloned project folder** in VS Code (File > Open Folder), not a parent directory. Copilot reads agent files from `.github/agents/` |
-| Copilot Chat doesn't show prompt templates | Click the slash icon `/` or type `/` in Copilot Chat. If no templates appear, make sure you opened the project folder and the GitHub Copilot Chat extension is up to date |
-| Copilot says "I don't have access to that file" | Copilot may need you to open the file first. Try opening `student-workspace/project-brief.md` in VS Code before asking Copilot about it |
-| `uv: command not found` | Install uv from [docs.astral.sh/uv](https://docs.astral.sh/uv/getting-started/installation/), then **restart your terminal** |
-| `python: command not found` | Install Python from [python.org/downloads](https://www.python.org/downloads/). On Mac, try `python3` instead of `python` |
-| `extract_presentation.py` fails | Make sure you're running `uv run extract_presentation.py` (not `python extract_presentation.py`). The script automatically installs its dependencies via uv |
+| Problem                                            | Solution                                                                                                                                                                  |
+| -------------------------------------------------- | ------------------------------------------------------------------------------------------------------------------------------------------------------------------------- |
+| `git: command not found`                           | Install Git from [git-scm.com/downloads](https://git-scm.com/downloads), then **restart your terminal**                                                                   |
+| `git clone` fails with "permission denied"         | Make sure you're using the HTTPS URL (starts with `https://`), not SSH                                                                                                    |
+| Copilot doesn't show persona agents (`@cio`, etc.) | Make sure you opened the **cloned project folder** in VS Code (File > Open Folder), not a parent directory. Copilot reads agent files from `.github/agents/`              |
+| Copilot Chat doesn't show prompt templates         | Click the slash icon `/` or type `/` in Copilot Chat. If no templates appear, make sure you opened the project folder and the GitHub Copilot Chat extension is up to date |
+| Copilot says "I don't have access to that file"    | Copilot may need you to open the file first. Try opening `student-workspace/project-brief.md` in VS Code before asking Copilot about it                                   |
+| `uv: command not found`                            | Install uv from [docs.astral.sh/uv](https://docs.astral.sh/uv/getting-started/installation/), then **restart your terminal**                                              |
+| `python: command not found`                        | Install Python from [python.org/downloads](https://www.python.org/downloads/). On Mac, try `python3` instead of `python`                                                  |
+| `extract_presentation.py` fails                    | Make sure you're running `uv run extract_presentation.py` (not `python extract_presentation.py`). The script automatically installs its dependencies via uv               |
 
 Still stuck? Ask your instructor or TA for help.

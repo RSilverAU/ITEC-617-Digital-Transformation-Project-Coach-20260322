@@ -1,8 +1,8 @@
-# Enterprise IT Navigator - Student Guide
+# Student Guide
 
-## What is the Enterprise IT Navigator?
+## What is the Enterprise IT Navigator Project Coach?
 
-The Enterprise IT Navigator is an AI-powered simulation that helps you prepare for your ITEC-617 Digital Transformation (DT) team project presentation. Rather than going into your presentation cold, you consult with 9 simulated executive personas who challenge your proposal from different C-suite perspectives, get scored on 9 rubric dimensions with 45 total criteria, and practice mock Q&A -- all before your real presentation to industry judges on April 27, 2026.
+The Enterprise IT Navigator Project Coach is an AI-powered simulation that helps you prepare for your ITEC-617 Digital Transformation (DT) team project presentation. Rather than going into your presentation cold, you consult with 9 simulated executive personas who challenge your proposal from different C-suite perspectives, get scored on 9 rubric dimensions with 45 total criteria, and practice mock Q&A -- all before your real presentation to industry judges on April 27, 2026.
 
 The simulation is grounded in the [Enterprise IT Primer](https://leifulstrup.github.io/enterprise-it-primer/), so the executives reference the same frameworks and concepts you are learning in ITEC-617.
 
@@ -10,63 +10,66 @@ The simulation is grounded in the [Enterprise IT Primer](https://leifulstrup.git
 
 Each persona has a distinct personality, priorities, and communication style. They will ask probing questions, push back on vague answers, and provide constructive guidance.
 
-| Persona | Name | Title | Focus Areas |
-|---------|------|-------|-------------|
-| CIO | Jordan Chen | Chief Information Officer | IT strategy, governance, enterprise architecture |
-| CISO | Anika Patel | Chief Information Security Officer | Cybersecurity, risk, privacy, compliance |
-| CFO | Robert Okafor | Chief Financial Officer | Financial analysis, ROI, TCO, budget impact |
-| COO | Maria Santos | Chief Operating Officer | Operations, implementation, pilot design |
-| CHRO | David Washington | Chief Human Resources Officer | Change management, people, culture |
-| CTO | Priya Ramanathan | Chief Technology Officer | Technology, innovation, architecture |
-| CDO | Sarah Kim | Chief Data Officer | Data strategy, governance, AI ethics |
-| Legal | Jonathan Shapiro | General Counsel | Legal, regulatory, IP, compliance |
-| Procurement | Lisa Fernandez | VP of Procurement | Vendor strategy, contracts, negotiation |
+| Persona     | Name             | Title                              | Focus Areas                                      |
+| ----------- | ---------------- | ---------------------------------- | ------------------------------------------------ |
+| CIO         | Jordan Chen      | Chief Information Officer          | IT strategy, governance, enterprise architecture |
+| CISO        | Anika Patel      | Chief Information Security Officer | Cybersecurity, risk, privacy, compliance         |
+| CFO         | Robert Okafor    | Chief Financial Officer            | Financial analysis, ROI, TCO, budget impact      |
+| COO         | Maria Santos     | Chief Operating Officer            | Operations, implementation, pilot design         |
+| CHRO        | David Washington | Chief Human Resources Officer      | Change management, people, culture               |
+| CTO         | Priya Ramanathan | Chief Technology Officer           | Technology, innovation, architecture             |
+| CDO         | Sarah Kim        | Chief Data Officer                 | Data strategy, governance, AI ethics             |
+| Legal       | Jonathan Shapiro | General Counsel                    | Legal, regulatory, IP, compliance                |
+| Procurement | Lisa Fernandez   | VP of Procurement                  | Vendor strategy, contracts, negotiation          |
 
-## How You're Evaluated
+## How You're "Evaluated"" by the AI Project Coach Panel
+
+<mark>NOTE: This evaluation is intended to provide feedback and simulate how a panel <u>*might*</u> evaluate your presentation. The executive panel you will present to may very well evaluate your team differently.</mark>
 
 Your proposal is evaluated across 9 rubric dimensions. Each dimension contains multiple criteria, and each criterion is scored on a 1-5 scale.
 
 ### Rubric Dimensions and Weights
 
-| # | Dimension | Weight | Key Personas |
-|---|-----------|--------|--------------|
-| 1 | Business Case Strength | 20% | CFO, COO |
-| 2 | Technology Selection and Feasibility | 10% | CTO, CIO |
-| 3 | Financial Analysis | 15% | CFO |
-| 4 | Risk and Security Assessment | 10% | CISO, Legal |
-| 5 | Implementation Strategy | 15% | COO, CIO, CTO |
-| 6 | Change Management and People | 10% | CHRO, COO |
-| 7 | Data and Analytics | 5% | CDO |
-| 8 | Vendor and Sourcing Strategy | 5% | Procurement |
-| 9 | Presentation Readiness | 10% | All |
+| #   | Dimension                            | Weight | Key Personas  |
+| --- | ------------------------------------ | ------ | ------------- |
+| 1   | Business Case Strength               | 20%    | CFO, COO      |
+| 2   | Technology Selection and Feasibility | 10%    | CTO, CIO      |
+| 3   | Financial Analysis                   | 15%    | CFO           |
+| 4   | Risk and Security Assessment         | 10%    | CISO, Legal   |
+| 5   | Implementation Strategy              | 15%    | COO, CIO, CTO |
+| 6   | Change Management and People         | 10%    | CHRO, COO     |
+| 7   | Data and Analytics                   | 5%     | CDO           |
+| 8   | Vendor and Sourcing Strategy         | 5%     | Procurement   |
+| 9   | Presentation Readiness               | 10%    | All           |
 
 ### Scoring Scale
 
-| Score | Label | Description |
-|-------|-------|-------------|
-| 1 | Not Addressed | Topic not mentioned or considered |
-| 2 | Superficial | Acknowledged but lacks depth or evidence |
-| 3 | Adequate | Reasonable treatment with some supporting evidence |
-| 4 | Strong | Well-developed with evidence, frameworks, and analysis |
-| 5 | Exceptional | Comprehensive, nuanced, with creative insights and strong evidence |
+| Score | Label         | Description                                                        |
+| ----- | ------------- | ------------------------------------------------------------------ |
+| 1     | Not Addressed | Topic not mentioned or considered                                  |
+| 2     | Superficial   | Acknowledged but lacks depth or evidence                           |
+| 3     | Adequate      | Reasonable treatment with some supporting evidence                 |
+| 4     | Strong        | Well-developed with evidence, frameworks, and analysis             |
+| 5     | Exceptional   | Comprehensive, nuanced, with creative insights and strong evidence |
 
 ### Readiness Levels
 
 Your composite weighted score maps to a readiness level:
 
-| Score Range | Readiness Level | Meaning |
-|-------------|----------------|---------|
-| 90-100% | Ready to Present | Strong across all dimensions |
-| 75-89% | Nearly Ready | Minor gaps to address |
-| 60-74% | Making Progress | Several areas need deepening |
-| 40-59% | Early Stage | Significant gaps in multiple areas |
-| 0-39% | Needs Rethinking | Fundamental issues with the approach |
+| Score Range | Readiness Level  | Meaning                              |
+| ----------- | ---------------- | ------------------------------------ |
+| 90-100%     | Ready to Present | Strong across all dimensions         |
+| 75-89%      | Nearly Ready     | Minor gaps to address                |
+| 60-74%      | Making Progress  | Several areas need deepening         |
+| 40-59%      | Early Stage      | Significant gaps in multiple areas   |
+| 0-39%       | Needs Rethinking | Fundamental issues with the approach |
 
 ## Recommended Workflow
 
 Follow this sequence to get the most out of the simulation:
 
 1. **Fill in your project brief.**
+   
    - Use `/setup-project` (Claude Code) or the **setup-project** prompt (Copilot) to walk through each section interactively.
    - The setup flow is **milestone-aware** — it detects where you are in the assignment sequence (Team Charter through Final Presentation), adapts its questions to your current stage, and provides guidance specific to your next assignment.
    - If you have completed prior assignments, drop copies of your deliverables (PDFs, DOCXs) into `student-workspace/source-docs/` before running setup — the AI will extract relevant context and skip questions you have already answered.
@@ -84,15 +87,17 @@ Follow this sequence to get the most out of the simulation:
 6. **Prepare your presentation.** Build your PowerPoint slides and fill in `student-workspace/presentation-notes.md` with your slide-by-slide notes and talking points.
 
 7. **Extract your presentation for AI feedback.** Once you have a draft PowerPoint, place a **copy** of your `.pptx` file in `student-workspace/slides/` and run:
+   
    ```
    uv run extract_presentation.py
    ```
+   
    This extracts all slide text, speaker notes, and structure into a format the AI can analyze. For visual feedback on charts and layout, also export your presentation as PDF (File > Export > PDF) and save it in the same `student-workspace/slides/` folder.
-
+   
    > **Claude Code users**: Claude Code can read `.pptx` and `.pdf` files directly — you can skip extraction and just ask Claude to review your slides.
-
+   
    > **Don't have Python or uv?** Install Python 3.12+ from [python.org/downloads](https://www.python.org/downloads/) and uv from [docs.astral.sh/uv](https://docs.astral.sh/uv/getting-started/installation/). This step is optional — the AI can still evaluate your project based on your brief without extracting slides.
-
+   
    > **Protect your work.** Always keep your original PowerPoint in a separate folder outside this repository (e.g., your Desktop or OneDrive). AI tools can sometimes modify files in your workspace inadvertently. Make a habit of saving backup copies or using `git commit` to snapshot your work before each AI feedback session. That way you can always recover a previous version.
 
 8. **Get slide-by-slide feedback.** Now when you consult personas or run evaluation, they will provide feedback on your *actual slides* — identifying which slides are strong, which need work, and what's missing from your presentation. AI-generated defense materials (judge Q&A, cheat sheets, speaker splits) land in `student-workspace/source-docs/presentation-support/`.
@@ -103,48 +108,42 @@ Follow this sequence to get the most out of the simulation:
 
 11. **Iterate.** Continue refining your slides and re-running extraction + evaluation until your readiness score reaches 75% or higher. Teams that reach "Nearly Ready" or above tend to perform well with industry judges.
 
-## Two Ways to Use the Simulation
+## Three Ways to Access the Simulation
 
-First, make sure you have **Git** installed ([git-scm.com/downloads](https://git-scm.com/downloads)), then create your team's copy of the simulation repo if you haven't already:
+The Enterprise IT Navigator works with three different AI tools. All three provide the same executive personas, rubrics, and evaluation capabilities — the difference is in how you set them up and interact with them.
 
-1. Go to [github.com/leifulstrup/ITEC-617-Digital-Transformation-Project-Coach](https://github.com/leifulstrup/ITEC-617-Digital-Transformation-Project-Coach).
-2. Click the green **"Use this template"** button → **"Create a new repository"**.
-3. Name your repo (e.g., `Team-Name-DT-Project`), set it to **Private**, and click **"Create repository"**.
-4. Clone your new repo:
+| Path  | Tool                     | Best for                                                                                  | Setup guide                                                |
+| ----- | ------------------------ | ----------------------------------------------------------------------------------------- | ---------------------------------------------------------- |
+| **A** | VS Code + GitHub Copilot | Students with GitHub Education (free Copilot Pro)                                         | [QUICKSTART-COPILOT.md](QUICKSTART-COPILOT.md)             |
+| **B** | Claude Code (CLI)        | Students with Claude Pro who are comfortable with a terminal                              | [QUICKSTART-CLAUDE-CODE.md](QUICKSTART-CLAUDE-CODE.md)     |
+| **C** | Claude Cowork (desktop)  | Students with Claude Pro who want the simplest setup — no Git, no terminal, no extensions | [QUICKSTART-CLAUDE-COWORK.md](QUICKSTART-CLAUDE-COWORK.md) |
 
-```bash
-git clone https://github.com/YOUR-USERNAME/YOUR-REPO-NAME.git
-```
+**Path C (Claude Cowork) is the recommended starting point** for students who have not previously used Git or VS Code. It requires only the Claude desktop app and a Claude Pro subscription.
 
-The Enterprise IT Navigator works with two different AI coding assistants. Choose whichever you have access to:
-
-- **VS Code + GitHub Copilot** (recommended for students with GitHub Education) -- see `QUICKSTART-COPILOT.md` for setup and usage instructions.
-- **Claude Code** (alternative for students with Claude Pro) -- see `QUICKSTART-CLAUDE-CODE.md` for setup and usage instructions.
-
-Both paths provide the same executive personas, rubrics, and evaluation capabilities. The difference is in how you interact with them.
+See the appropriate quickstart guide for your chosen path. All setup instructions, including how to download the repository and collaborate as a team, are in those documents.
 
 ## Enterprise IT Primer
 
 The simulation is grounded in the [Enterprise IT Primer](https://leifulstrup.github.io/enterprise-it-primer/). The `primer/` directory in this repository contains 16 reference sections covering the full breadth of enterprise IT topics, plus consolidated industry judge advice:
 
-| # | Section | Key Topics |
-|---|---------|------------|
-| 01 | IT Governance Frameworks | COBIT, ITIL, decision rights, governance structures |
-| 02 | C-Suite IT Roles | CIO, CTO, CISO, CDO roles and responsibilities |
-| 03 | IT Budgeting and Finance | Run/Grow/Transform, CapEx vs. OpEx, IT cost structures |
-| 04 | Build vs. Buy vs. Subscribe | Sourcing decisions, evaluation criteria, trade-offs |
-| 05 | Cloud Computing | IaaS, PaaS, SaaS, deployment models, shared responsibility |
-| 06 | Enterprise Applications | ERP, CRM, SCM, integration patterns |
-| 07 | Open Source Software | OSS licensing, community models, enterprise adoption |
-| 08 | Cybersecurity Governance | NIST CSF, threat modeling, zero trust, incident response |
-| 09 | Data Governance | Data quality, stewardship, privacy, master data management |
-| 10 | Shadow IT | Risks, detection, governance approaches |
-| 11 | Digital Transformation | Transformation strategy, maturity models, success factors |
-| 12 | AI and Emerging Technology | AI/ML, blockchain, IoT, technology readiness levels |
-| 13 | Innovation Management | Innovation pipelines, experimentation, scaling |
-| 14 | Vendor Management | Kraljic Matrix, SLAs, contract negotiation, vendor risk |
-| 15 | Project Management | Agile, Waterfall, hybrid, project governance |
-| 16 | Industry Judge Advice | 10 recurring themes from 4 years of judge feedback (2021-2024) |
+| #   | Section                     | Key Topics                                                     |
+| --- | --------------------------- | -------------------------------------------------------------- |
+| 01  | IT Governance Frameworks    | COBIT, ITIL, decision rights, governance structures            |
+| 02  | C-Suite IT Roles            | CIO, CTO, CISO, CDO roles and responsibilities                 |
+| 03  | IT Budgeting and Finance    | Run/Grow/Transform, CapEx vs. OpEx, IT cost structures         |
+| 04  | Build vs. Buy vs. Subscribe | Sourcing decisions, evaluation criteria, trade-offs            |
+| 05  | Cloud Computing             | IaaS, PaaS, SaaS, deployment models, shared responsibility     |
+| 06  | Enterprise Applications     | ERP, CRM, SCM, integration patterns                            |
+| 07  | Open Source Software        | OSS licensing, community models, enterprise adoption           |
+| 08  | Cybersecurity Governance    | NIST CSF, threat modeling, zero trust, incident response       |
+| 09  | Data Governance             | Data quality, stewardship, privacy, master data management     |
+| 10  | Shadow IT                   | Risks, detection, governance approaches                        |
+| 11  | Digital Transformation      | Transformation strategy, maturity models, success factors      |
+| 12  | AI and Emerging Technology  | AI/ML, blockchain, IoT, technology readiness levels            |
+| 13  | Innovation Management       | Innovation pipelines, experimentation, scaling                 |
+| 14  | Vendor Management           | Kraljic Matrix, SLAs, contract negotiation, vendor risk        |
+| 15  | Project Management          | Agile, Waterfall, hybrid, project governance                   |
+| 16  | Industry Judge Advice       | 10 recurring themes from 4 years of judge feedback (2021-2024) |
 
 Executive personas will reference specific frameworks from these sections and weave in insights from past industry judges. Studying the primer before consulting with executives will help you engage more effectively and give stronger answers.
 
